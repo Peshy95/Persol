@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  .homepage {
+    text-align: center;
+   height: 100vh;
+  }
+  
+  /* Hero Section */
+  .peshi img{
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+  }
+  .peshi-content{
+    position: relative;
+    bottom: 370px;
+    left: 450px;
+    color: #fff;
+    text-align: left;
+    width: 500px;
+    background-color: #4415114a;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .peshi {
+    background: url("") center/cover no-repeat;
+    color: rgb(23, 4, 4);
+    object-fit: cover;
+  }
+  
+  .peshi h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  .peshi p {
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  .buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .shop-btn {
+    background-color: #b34d00;
+    color: white;
+  }
+  
+  .learn-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+  }
+  
+  /* Features */
+  .features {
+    padding: 50px 20px;
+    background: #d56c11;
+    color: white;
+  }
+  
+  .feature-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .feature {
+    background: white;
+    color: black;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+  }
+  
+  .feature img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Testimonials */
+  .testimonials {
+    background: #fff;
+    padding: 50px 20px;
+  }
+  
+  .testimonial-box {
+    background: #f5f5f5;
+    padding: 20px;
+    margin: 10px auto;
+    width: 300px;
+    border-radius: 5px;
+  }
+  
+  /* Contact */
+  .contact {
+    background: rgba(254, 253, 253, 0.867);
+    color: white;
+    padding: 40px 20px;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #7a311a;
+    color: white;
+    padding: 20px;
+  }
+  
+  

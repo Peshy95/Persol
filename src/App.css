@@ -1,0 +1,99 @@
+/* app.css */
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #de4646;
+  color: #180303;
+}
+
+/* Navbar Styles */
+
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Visitor count styled to appear at the top left of the navbar */
+.visitor-count {
+  font-size: 0.9rem;
+  color: #2da40d;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+/* Navbar links */
+.nav-link {
+  color: #ca500e !important;
+  margin-right: 15px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #007bff !important;
+}
+
+.dropdown-menu {
+  background-color: #706e08;
+  border: 1px solid #ccc;
+}
+
+.current-time {
+  font-size: 0.8rem;
+  color: #333;
+  white-space: nowrap;
+}
+
+/* Container & Page Content */
+.container {
+  padding: 1rem;
+}
+
+/* Headings */
+h1, h2, h4 {
+  margin-bottom: 1rem;
+}
+
+/* Product Listing Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background: #b004b0;
+  border: 1px solid #510dd8;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+ul li h4 {
+  margin-top: 0;
+}
+
+/* Contact Page Map Styles */
+iframe {
+  border: none;
+  border-radius: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar-brand, .nav-link {
+    font-size: 0.9rem;
+  }
+  
+  .container {
+    padding: 0.5rem;
+  }
+}

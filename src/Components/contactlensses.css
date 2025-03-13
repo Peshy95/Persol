@@ -1,0 +1,93 @@
+
+.contact-lenses-container {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; 
+    padding: 20px;
+    text-align: center;
+  }
+  
+ 
+  h1 {
+    color: #0044cc;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+
+  .brand-section {
+    background-color: #ffffff;
+    border: 3px solid #f7f6f4; 
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .brand-section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  }
+  
+  
+  h2 {
+    color: #ff8c00; 
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+ 
+  .brand-products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .lens-item {
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 12px;
+    width: 600px; 
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .lens-item:hover {
+    box-shadow: 0 4px 12px rgba(96, 44, 4, 0.2);
+    transform: scale(1.03);
+  }
+  
+  
+  .lens-image {
+    width: 100%;
+    height: 170px; 
+    object-fit: cover; 
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  
+  
+  .toggle-button {
+    background-color: #a14e0b;
+    color: white;
+    border: none;
+    padding: 50px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    margin-top: 35px;
+  }
+  
+  .toggle-button:hover {
+    background-color: #ff8c00;
+    transform: scale(1.08);
+  }
+  
