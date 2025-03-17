@@ -5,7 +5,7 @@ import './home.css'
 const Home = () => {
   return (
     <div className="homepage">
-      {/* Hero Section */}
+      {/* attractive Hero Section  */}
       <section className=" peshi">
       <img src="src/assets/pexels-tomer-dahari-571687-1331386.jpg" alt="" />
         <div className="peshi-content">

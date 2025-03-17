@@ -1,9 +1,151 @@
-.testimonials{
-    display: grid;
-    grid-template-columns:repeat(3, 1fr);
-  }
+/* General Styles */
+.contact-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px;
+  background-color: #004080; /* Deep Blue */
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
 
-  .contact-container h2{
-    text-align: center;
-    padding: 10px;
-  }
+/* Section Titles */
+.section-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: rgb(188, 134, 10);
+}
+
+/* Testimonials Section */
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.testimonial-box {
+  width: 30%;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #333;
+}
+
+.testimonial-image {
+  width: 60px;  
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.testimonial-author {
+  font-weight: bold;
+  color: #222;
+}
+
+.testimonial-rating {
+  font-size: 18px;
+  color: #68430a;
+}
+
+
+.contact-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(45deg, #004080, #936309); /* Blue to Dark Orange */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+/* Left Side Images */
+.contact-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45%;
+}
+
+.contact-image {
+  width: 90%; 
+  max-width: 300px; /* its too big */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+
+.contact-details {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact-icon {
+  font-size: 24px;
+  color: #7f5508; /* Dark Orange */
+  margin-right: 10px;
+}
+
+.contact-box h3 {
+  font-size: 18px;
+  margin: 0;
+  color: rgb(209, 124, 14);
+}
+
+.contact-box p {
+  margin: 5px 0 0;
+  font-size: 16px;
+}
+
+.contact-box a {
+  color: rgb(119, 83, 6);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}
+
+/*my precious Footer */
+.footer {
+  padding: 20px;
+  background: #815605; /* Dark Orange */
+  color: white;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.footer-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer-text {
+  font-size: 14px;
+  margin-top: 5px;
+}

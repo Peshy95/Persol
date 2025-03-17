@@ -1,6 +1,4 @@
-/* app.css */
-
-/* Global Styles */
+/* refused to work */
 body {
   margin: 0;
   padding: 0;
@@ -9,7 +7,7 @@ body {
   color: #180303;
 }
 
-/* Navbar Styles */
+
 
 
 .navbar-brand {
@@ -22,7 +20,7 @@ body {
   margin-right: 10px;
 }
 
-/* Visitor count styled to appear at the top left of the navbar */
+
 .visitor-count {
   font-size: 0.9rem;
   color: #2da40d;
@@ -31,7 +29,7 @@ body {
   right: 5px;
 }
 
-/* Navbar links */
+
 .nav-link {
   color: #ca500e !important;
   margin-right: 15px;
@@ -53,17 +51,17 @@ body {
   white-space: nowrap;
 }
 
-/* Container & Page Content */
+
 .container {
   padding: 1rem;
 }
 
-/* Headings */
+
 h1, h2, h4 {
   margin-bottom: 1rem;
 }
 
-/* Product Listing Styles */
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -81,13 +79,13 @@ ul li h4 {
   margin-top: 0;
 }
 
-/* Contact Page Map Styles */
+
 iframe {
   border: none;
   border-radius: 5px;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 768px) {
   .navbar-brand, .nav-link {
     font-size: 0.9rem;

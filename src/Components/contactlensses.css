@@ -1,93 +1,131 @@
-
 .contact-lenses-container {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff; 
-    padding: 20px;
-    text-align: center;
-  }
-  
- 
-  h1 {
-    color: #0044cc;
-    margin-bottom: 20px;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
+  background-color: #572b06;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
 
-  .brand-section {
-    background-color: #ffffff;
-    border: 3px solid #f7f6f4; 
-    border-radius: 12px;
-    padding: 20px;
-    margin-bottom: 25px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  }
-  
-  .brand-section:hover {
-    transform: scale(1.02);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
-  }
-  
-  
-  h2 {
-    color: #ff8c00; 
-    font-size: 22px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  
- 
+/* the  Titles */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #D35400;
+}
+
+* Each Brand Section */
+.brand-section {
+  background-color: #031442;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Name of the brand */
+.brand-section h2 {
+  color: #D35400;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* the layout which keeps disturbing me */
+.brand-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/*alligning them */
+.lens-item {
+  display: flex;
+  align-items: center;
+  width: 48%; /* its not working */
+  background-color: #918fb1;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+/*my best part*/
+.lens-item:hover {
+  transform: scale(1.05);
+}
+
+
+.lens-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #030d43;
+}
+
+
+.lens-item:nth-child(even) {
+  flex-direction: row-reverse; /* Image on right, text on left  but its not supposed to be like this*/
+}
+
+.lens-item p {
+  flex: 1;
+  margin-left: 15px;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #ddd;
+  text-align: left;
+}
+
+/* space my items */
+.lens-item:nth-child(even) p {
+  margin-left: 0;
+  margin-right: 15px;
+  text-align: right;
+}
+
+
+.toggle-button {
+  margin-top: 15px;
+}
+
+button {
+  background-color: #D35400;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #b84300;
+}
+
+/* Responsive Design  though it still doesn't make sense */
+@media (max-width: 768px) {
   .brand-products {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
   .lens-item {
-    background-color: #f9f9f9;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    padding: 12px;
-    width: 600px; 
-    text-align: center;
-    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
-  }
-  
-  .lens-item:hover {
-    box-shadow: 0 4px 12px rgba(96, 44, 4, 0.2);
-    transform: scale(1.03);
-  }
-  
-  
-  .lens-image {
     width: 100%;
-    height: 170px; 
-    object-fit: cover; 
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
+    flex-direction: column;
+    text-align: center;
   }
-  
-  
-  
-  .toggle-button {
-    background-color: #a14e0b;
-    color: white;
-    border: none;
-    padding: 50px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
-    margin-top: 35px;
+
+  .lens-item:nth-child(even),
+  .lens-item:nth-child(odd) {
+    flex-direction: column;
   }
-  
-  .toggle-button:hover {
-    background-color: #ff8c00;
-    transform: scale(1.08);
+
+  .lens-item p {
+    text-align: center;
+    margin: 10px 0 0 0;
   }
-  
+}

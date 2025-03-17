@@ -1,20 +1,19 @@
 import React, { useState } from "react";
-import './sunglasses.css'
-
+import './sunglasses.css';
 
 const SunglassesData = [
   {
     brand: "Ray-Ban",
     image: "src/assets/ray-ban-black.webp",
     description: "Classic and stylish sunglasses that offer superior UV protection.",
-    moreImages: ["src/assets/rayban1.jpg", "src/assets/rayban2.jpg"],
+    moreImages: ["src/assets/rayban1.webp", "src/assets/rayban2.webp","src/assets/ray-ban-black.webp"],
     moreDescriptions: ["Aviator style with polarized lenses.", "Wayfarer style with a modern touch."],
   },
   {
     brand: "Oakley",
     image: "src/assets/aokley.jpeg",
     description: "High-performance sunglasses designed for sports and outdoor activities.",
-    moreImages: ["src/assets/oakley1.jpg", "src/assets/oakley2.jpg"],
+    moreImages: ["src/assets/oakley1.avif", "src/assets/oakley2.png"],
     moreDescriptions: ["Sporty wraparound design.", "Lightweight frames with UV protection."],
   },
   {
@@ -28,7 +27,7 @@ const SunglassesData = [
     brand: "Prada",
     image: "src/assets/prada.jpeg",
     description: "Bold and sophisticated sunglasses with high-end craftsmanship.",
-    moreImages: ["src/assets/prada1.jpg", "src/assets/prada2.jpg"],
+    moreImages: ["src/assets/prada1.jpg", "src/assets/prada2.avif"],
     moreDescriptions: ["Elegant cat-eye frames.", "Minimalist design with luxury appeal."],
   },
 ];
@@ -44,7 +43,7 @@ const Sunglasses = () => {
     <div className="sunglasses-container">
       <h1>Sunglasses Collection</h1>
       {expandedBrand === null ? (
-        <div className="sunglasses-grid">
+        <div className="sunglasses-scroll">
           {SunglassesData.map((sunglass, index) => (
             <div key={index} className="sunglass-card">
               <img src={sunglass.image} alt={sunglass.brand} className="sunglass-image" />

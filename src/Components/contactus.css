@@ -1,0 +1,68 @@
+.contacts-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("src/assets/background.jpg") no-repeat center center/cover; /* if its deosnt work i have to place it in the jsx file */
+  }
+  
+  .contacts-card {
+    display: flex;
+    background: rgb(98, 72, 3);
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-width: 800px;
+    width: 50%;
+  }
+  
+  .contacts-text {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .contacts-text h2 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .contacts-text p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .contacts-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .contacts-buttons button {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .get-started {
+    background-color: #f5e1dc;
+  }
+  
+  .learn-more {
+    background-color: white;
+  }
+  
+  .contacts-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f6f6f6;
+  }
+  
+  .contacts-image img {
+    width: 100%;
+    height: auto;
+  }
+  
