@@ -42,7 +42,7 @@ const Contact = () => {
             <FaEnvelope className="contact-icon" />
             <div>
               <h3>Email</h3>
-              <p><a href="mailto:support@persollenses.com">support@persollenses.com</a></p>
+              <p><a href="preciousamusugut@gmail.com">preciousamusugut@gmail.com</a></p>
             </div>
           </div>
 
@@ -50,7 +50,7 @@ const Contact = () => {
             <FaPhone className="contact-icon" />
             <div>
               <h3>Phone</h3>
-              <p><a href="tel:0701234567">0701234567</a></p>
+              <p><a href="tel:0701234567">0111282300</a></p>
             </div>
           </div>
 

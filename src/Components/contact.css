@@ -1,16 +1,15 @@
-/* General Styles */
 .contact-container {
   max-width: 1000px;
   margin: auto;
   padding: 40px;
-  background-color: #004080; /* Deep Blue */
+  background-color: #004080; 
   color: white;
   border-radius: 8px;
   text-align: center;
   font-family: Arial, sans-serif;
 }
 
-/* Section Titles */
+
 .section-title {
   font-size: 26px;
   font-weight: bold;
@@ -18,7 +17,7 @@
   color: rgb(188, 134, 10);
 }
 
-/* Testimonials Section */
+
 .testimonials {
   display: flex;
   justify-content: space-between;
@@ -60,19 +59,18 @@
   color: #68430a;
 }
 
-
 .contact-info-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(45deg, #004080, #936309); /* Blue to Dark Orange */
+  background: linear-gradient(45deg, #004080, #936309); /* Blue to Dark Orange it has to change the colors */
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 30px;
-  flex-wrap: wrap; /* Ensures responsiveness */
+  flex-wrap: wrap; 
 }
 
-/* Left Side Images */
+
 .contact-images {
   display: flex;
   flex-direction: column;
@@ -82,14 +80,24 @@
 
 .contact-image {
   width: 90%; 
-  max-width: 300px; /* its too big */
-  height: auto;
-  border-radius: 8px;
+  max-width: 300px; 
   object-fit: cover;
+  border-radius: 8px;
   margin-bottom: 10px;
+  height: auto;
 }
 
+.contact-box h3 {
+  margin: 0;
+  font-size: 18px;
+ color: rgb(209, 124, 14);
+}
 
+.contact-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
 .contact-details {
   width: 50%;
   display: flex;
@@ -98,23 +106,13 @@
   align-items: flex-start;
 }
 
-.contact-box {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
 
 .contact-icon {
   font-size: 24px;
-  color: #7f5508; /* Dark Orange */
+  color: #7f5508; /* this color ha to be Dark Orange */
   margin-right: 10px;
 }
 
-.contact-box h3 {
-  font-size: 18px;
-  margin: 0;
-  color: rgb(209, 124, 14);
-}
 
 .contact-box p {
   margin: 5px 0 0;
@@ -132,6 +130,11 @@
 }
 
 /*my precious Footer */
+
+.footer-title {
+  font-size: 20px;
+  font-weight: bold;
+}
 .footer {
   padding: 20px;
   background: #815605; /* Dark Orange */
@@ -139,12 +142,6 @@
   border-radius: 8px;
   margin-top: 30px;
 }
-
-.footer-title {
-  font-size: 20px;
-  font-weight: bold;
-}
-
 .footer-text {
   font-size: 14px;
   margin-top: 5px;

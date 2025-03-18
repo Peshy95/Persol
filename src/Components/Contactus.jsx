@@ -1,6 +1,6 @@
 import React from "react"; 
 import "./ContactUs.css";
-import chatImage from "/src/assets/back.jpg"; // Ensure path is correct
+import Image from "/src/assets/back.jpg"; // This path is annoying me
 
 const ContactUs = () => {
   return (
@@ -18,7 +18,7 @@ const ContactUs = () => {
           </div>
         </div>
         <div className="contacts-image">
-          <img src={chatImage} alt="Chat Icons" />
+          <img src={Image} alt="Chat Icons" />
         </div>
       </div>
     </div>
