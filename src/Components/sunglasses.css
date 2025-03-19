@@ -24,6 +24,9 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   width: 100%;
 }
+.sunglasses-container h1{
+  text-align: center;
+}
 
 .hero h1 {
   font-size: 32px;
@@ -99,7 +102,7 @@ body {
   width: 100%;
   max-width: 800px;
   margin-top: 40px;
-  background: rgba(153, 118, 118, 0.9);
+  background: rgba(216, 148, 2, 0.9);
   color: black;
   padding: 20px;
   border-radius: 15px;
@@ -156,7 +159,7 @@ body {
 }
 
 .back-button {
-  background-color: rgb(82, 30, 4);
+  background-color: rgb(13, 143, 223);
   color: white;
   border: none;
   padding: 10px 20px;

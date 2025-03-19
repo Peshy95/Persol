@@ -6,7 +6,7 @@ const SunglassesData = [
     brand: "Ray-Ban",
     image: "src/assets/ray-ban-black.webp",
     description: "Classic and stylish sunglasses that offer superior UV protection.",
-    moreImages: ["src/assets/rayban1.webp", "src/assets/rayban2.webp","src/assets/ray-ban-black.webp"],
+    moreImages: ["src/assets/rayban1.webp", "src/assets/rayban2.webp","src/assets/ray-ban-black.webp",""],
     moreDescriptions: ["Aviator style with polarized lenses.", "Wayfarer style with a modern touch."],
   },
   {

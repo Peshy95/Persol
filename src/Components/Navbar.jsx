@@ -21,14 +21,15 @@ function CombinedNavbar() {
     <RBNavbar className='navbar'>
       <Container >
         <RBNavbar.Brand href="#home" >
-          Persal <span className="visitor-count">Visitors: {visitorCount}</span>
+          <img src="src/assets/image-removebg-preview (29).png" alt="" />
+         <span className="visitor-count">Visitors: {visitorCount}</span>
         </RBNavbar.Brand>
         <RBNavbar.Toggle aria-controls="basic-navbar-nav" />
         <RBNavbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+            <NavDropdown title="" id="basic-nav-dropdown">
               <NavDropdown.Item href="/sunglasses">Sunglasses</NavDropdown.Item>
               <NavDropdown.Item href="/contact lensses">contact lensses</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Frames</NavDropdown.Item>

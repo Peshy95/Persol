@@ -1,5 +1,14 @@
 .navbar {
     background-color: #441511 !important;
+    height: 70px;
+  }
+
+  .navbar img{
+    position: relative;
+    right: 70vh;
+    bottom: 50px;
+    width: 50vh;
+    height: 10vh;
   }
   
   .navbar-brand {
@@ -10,7 +19,7 @@
   
   .nav-link {
     color: #ffffff !important;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
     transition: color 0.3s ease;
   }
   
@@ -45,8 +54,11 @@
     color: #ffffff;
   }
   
-  .current-time{
+  .current-time,.me-auto {
     color: #fff;
+    position: relative;
+    bottom: 100px;
+    left: 50px;
   }
 
   
