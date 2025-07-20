@@ -3,7 +3,7 @@ import "./frames.css";
 
 const FramesSection = () => {
   return (
-    <section className="frames-section">
+    <section className="frames-section" id="frames">
       <h3 className="quality-title">Frames</h3>
       <br />
       <br />

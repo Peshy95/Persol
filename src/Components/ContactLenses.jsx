@@ -16,16 +16,16 @@ const ContactLensesData = {
     { image: "src/assets/airoptix-hydraglyde.png", description: "Precision-designed lenses that optimize light transmission, offering improved contrast and reduced glare, perfect for those with sensitive eyes or night vision concerns." }
   ],
   Biofinity: [
-    { image: "", description: "High-moisture lenses that retain water naturally, ensuring long-lasting hydration and reducing the risk of dry eye symptoms, even in challenging environments." },
-    { image: "",  description: "Extended wear lenses crafted with Aquaform technology to deliver optimal oxygen to your eyes, supporting corneal health and minimizing discomfort." },
-    { image: "", description: "Optimized water content keeps lenses soft and smooth, ensuring an irritation-free experience that supports clear and stable vision for long hours." },
-    { image: "", description: "Naturally wettable lenses designed to mimic the eye’s natural hydration system, reducing eye strain and enhancing long-term ocular comfort." }
+    { image: "src/assets/biofinity-1.avif", description: "High-moisture lenses that retain water naturally, ensuring long-lasting hydration and reducing the risk of dry eye symptoms, even in challenging environments." },
+    { image: "src/assets/bio-2.jpeg",  description: "Extended wear lenses crafted with Aquaform technology to deliver optimal oxygen to your eyes, supporting corneal health and minimizing discomfort." },
+    { image: "src/assets/bio-3.jpeg", description: "Optimized water content keeps lenses soft and smooth, ensuring an irritation-free experience that supports clear and stable vision for long hours." },
+    { image: "src/assets/bio-4.jpeg", description: "Naturally wettable lenses designed to mimic the eye’s natural hydration system, reducing eye strain and enhancing long-term ocular comfort." }
   ],
   Dailies: [
-    { image: "", description: "Convenient and hygienic daily disposable lenses that eliminate the need for cleaning, ensuring fresh, irritation-free eyes with every new pair." },
-    { image: "", description: "Daily lenses designed with crisp, clear vision technology, reducing blurriness and enhancing contrast for sharper and more precise sight." },
-    { image: "", description: "Ultra-thin lenses that conform naturally to the eye, promoting effortless blinking and reducing the likelihood of dry spots or discomfort." },
-    { image: "", description: "HydraLuxe technology provides a tear-like network of moisture, helping to maintain stable vision and reduce eye strain in digital-heavy lifestyles." }
+    { image: "src/assets/dali-1.jpg", description: "Convenient and hygienic daily disposable lenses that eliminate the need for cleaning, ensuring fresh, irritation-free eyes with every new pair." },
+    { image: "src/assets/dali-2.jpg", description: "Daily lenses designed with crisp, clear vision technology, reducing blurriness and enhancing contrast for sharper and more precise sight." },
+    { image: "src/assets/dali-3.jpg", description: "Ultra-thin lenses that conform naturally to the eye, promoting effortless blinking and reducing the likelihood of dry spots or discomfort." },
+    { image: "src/assets/dali-5.jpg", description: "HydraLuxe technology provides a tear-like network of moisture, helping to maintain stable vision and reduce eye strain in digital-heavy lifestyles." }
   ]
 };
 
@@ -37,7 +37,7 @@ const ContactLenses = () => {
   };
 
   return (
-    <div className="contact-lenses-container">
+    <div className="contact-lenses-container" id="lensses">
       <h1>Contact Lenses Collection</h1>
       <div className="contact-lenses-list">
         {Object.entries(ContactLensesData).map(([brand, products]) => (
@@ -55,7 +55,9 @@ const ContactLenses = () => {
             <button onClick={() => toggleShowMore(brand)}>
               {showMore[brand] ? "Show Less" : "Show More"}
             </button>
+
           </div>
+          
         ))}
       </div>
     </div>

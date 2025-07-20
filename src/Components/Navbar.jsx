@@ -28,19 +28,19 @@ function CombinedNavbar() {
         <RBNavbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
+            <Nav.Link href="#Products">Products</Nav.Link>
             <NavDropdown title="" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/sunglasses">Sunglasses</NavDropdown.Item>
-              <NavDropdown.Item href="/contact lensses">contact lensses</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Frames</NavDropdown.Item>
+              <NavDropdown.Item href="#sunglasses">Sunglasses</NavDropdown.Item>
+              <NavDropdown.Item href="#lensses">contact lensses</NavDropdown.Item>
+         
+              <NavDropdown.Item href="#frames">Frames</NavDropdown.Item>
+              <NavDropdown.Item href="#Contact">Testimonies</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+              <NavDropdown.Item href="#contact">Contactus</NavDropdown.Item>
             </NavDropdown>
             {/* Additional links as needed */}
           </Nav>
-          <div className="current-time">
-            {currentTime}
-          </div>
+          
         </RBNavbar.Collapse>
       </Container>
     </RBNavbar>
@@ -48,3 +48,7 @@ function CombinedNavbar() {
 }
 
 export default CombinedNavbar;
+
+/* <div className="current-time">
+            {currentTime}
+          </div> */

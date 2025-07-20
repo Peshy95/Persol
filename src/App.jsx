@@ -6,8 +6,7 @@ import Sunglasses from './Components/Sunglasses'
 import ContactLenses from './Components/ContactLenses'
 import Contactus  from './Components/Contactus'
 import Contact from './Components/Contact'
-
-
+import Footer from './Components/Footer'
 
 function App() {
   
@@ -20,6 +19,7 @@ function App() {
     <ContactLenses/>
     <Contactus/>
     <Contact/>
+    <Footer/>
 
    
     

@@ -1,11 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./contact.css";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 
 const Contact = () => {
+  const [dateTime, setDateTime] = useState("");
+  const [location, setLocation] = useState("Fetching location...");
+
+  useEffect(() => {
+    const updateDateTime = () => {
+      const now = new Date();
+      setDateTime(now.toLocaleString());
+    };
+    
+    updateDateTime();
+    const interval = setInterval(updateDateTime, 1000);
+
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const { latitude, longitude } = position.coords;
+          setLocation(`Lat: ${latitude.toFixed(2)}, Lon: ${longitude.toFixed(2)}`);
+        },
+        () => {
+          setLocation("Location access denied");
+        }
+      );
+    } else {
+      setLocation("Geolocation not supported");
+    }
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="contact-container">
-      {/* Customer Testimonials */}
       <h2 className="section-title">Customer Testimonials</h2>
       <section className="testimonials">
         <div className="testimonial-box">
@@ -28,21 +56,18 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
       <div className="contact-info-container">
-        {/* Left Side Images */}
         <div className="contact-images">
           <img src="src/assets/contact1.jpg" alt="Customer Service" className="contact-image contact-image1" />
           <img src="src/assets/contact2.jpg" alt="Office Location" className="contact-image contact-image2" />
         </div>
 
-        {/* Right Side Contact Details */}
         <div className="contact-details">
           <div className="contact-box">
             <FaEnvelope className="contact-icon" />
             <div>
               <h3>Email</h3>
-              <p><a href="preciousamusugut@gmail.com">preciousamusugut@gmail.com</a></p>
+              <p><a href="mailto:preciousamusugut@gmail.com">preciousamusugut@gmail.com</a></p>
             </div>
           </div>
 
@@ -58,18 +83,15 @@ const Contact = () => {
             <FaMapMarkerAlt className="contact-icon" />
             <div>
               <h3>Office</h3>
-              <p>456 Main Street, Sydney</p>
+              <p>Kimathi  Street, Nairobi</p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Footer */}
-      <footer className="footer">
-        <h2 className="footer-title">Explore Our Quality Frames and Lenses</h2>
-        <p className="footer-text">Your trusted partner for affordable optical products.</p>
-        <p className="footer-text">© 2025 Persol Lenses. All rights reserved.</p>
-      </footer>
+      <div className="ticker">
+        <p className="ticker-text">{dateTime} | {location}</p>
+      </div>
     </div>
   );
 };
